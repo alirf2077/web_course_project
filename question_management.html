@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Question Management</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    .sidebar {
+      background-color: #343a40;
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+
+    .sidebar a:hover {
+      background-color: #007bff;
+    }
+
+    .main-content {
+      margin-left: 270px;
+      padding: 20px;
+    }
+
+    .form-section {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .form-section h3 {
+      margin-bottom: 20px;
+    }
+
+    .btn-primary-custom {
+      background-color: #007bff;
+      color: white;
+      border-radius: 20px;
+      padding: 10px 20px;
+    }
+
+    .btn-primary-custom:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Menu</h3>
+    <a href="home.html">Home</a>
+    <a href="#">Scoreboard</a>
+    <a href="designer_dashboard.html">Dashboard</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <h1>Manage Questions</h1>
+
+    <!-- List of Questions -->
+    <div class="form-section">
+        <h3>Existing Questions</h3>
+        <ul>
+          <li>What is the capital of France?</li>
+          <li>Who discovered gravity?</li>
+          <li>Which planet is closest to the sun?</li>
+          <!-- List of questions dynamically populated -->
+        </ul>
+      </div>
+
+    <!-- Create Multiple Choice Question Form -->
+    <div class="form-section">
+      <h3>Create Multiple Choice Question</h3>
+      <form>
+        <!-- Question Text -->
+        <div class="mb-3">
+          <label for="questionText" class="form-label">Question Text</label>
+          <textarea class="form-control" id="questionText" rows="3" placeholder="Enter your question here..."></textarea>
+        </div>
+
+        <!-- Options -->
+        <div class="mb-3">
+          <label for="optionA" class="form-label">Option A</label>
+          <input type="text" class="form-control" id="optionA" placeholder="Enter option A">
+        </div>
+        <div class="mb-3">
+          <label for="optionB" class="form-label">Option B</label>
+          <input type="text" class="form-control" id="optionB" placeholder="Enter option B">
+        </div>
+        <div class="mb-3">
+          <label for="optionC" class="form-label">Option C</label>
+          <input type="text" class="form-control" id="optionC" placeholder="Enter option C">
+        </div>
+        <div class="mb-3">
+          <label for="optionD" class="form-label">Option D</label>
+          <input type="text" class="form-control" id="optionD" placeholder="Enter option D">
+        </div>
+
+        <!-- Correct Answer -->
+        <div class="mb-3">
+          <label for="correctAnswer" class="form-label">Correct Answer</label>
+          <select class="form-select" id="correctAnswer">
+            <option value="A">Option A</option>
+            <option value="B">Option B</option>
+            <option value="C">Option C</option>
+            <option value="D">Option D</option>
+          </select>
+        </div>
+
+        <!-- Category Selection -->
+        <div class="mb-3">
+          <label for="questionCategory" class="form-label">Question Category</label>
+          <select class="form-select" id="questionCategory">
+            <!-- Dynamically populate categories here -->
+            <option value="math">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+            <!-- Add more categories dynamically based on created ones -->
+          </select>
+        </div>
+
+        <!-- Difficulty Level -->
+        <div class="mb-3">
+          <label for="difficultyLevel" class="form-label">Difficulty Level</label>
+          <select class="form-select" id="difficultyLevel">
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>
+        </div>
+
+        <!-- Related Questions Section -->
+        <div class="mb-3">
+          <label for="relatedQuestions" class="form-label">Related Questions</label>
+          <select class="form-select" id="relatedQuestions" multiple>
+            <!-- Dynamically populate with related questions -->
+            <option value="q1">What is the capital of France?</option>
+            <option value="q2">Who discovered gravity?</option>
+            <option value="q3">Which planet is known as the Red Planet?</option>
+            <!-- More questions could be listed here -->
+          </select>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary-custom">Submit Question</button>
+      </form>
+    </div>
+
+
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
