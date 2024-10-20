@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoreboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    .sidebar {
+      background-color: #343a40;
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+
+    .sidebar a:hover {
+      background-color: #007bff;
+    }
+
+    .main-content {
+      margin-left: 270px;
+      padding: 20px;
+    }
+
+    .user-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .user-card h3 {
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .user-card p {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .scoreboard {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .scoreboard h3 {
+      margin-bottom: 20px;
+    }
+
+    .score-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .score-item:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Menu</h3>
+    <a href="home.html">Home</a>
+    <a href="#">Question Management</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- User info card -->
+    <div class="user-card">
+      <h3>Welcome, Username!</h3>
+      <p>Score: <span id="user-score">1234</span></p>
+    </div>
+
+    <h1>Your Scoreboard</h1>
+
+    <!-- Scoreboard Section -->
+    <div class="scoreboard">
+      <h3>Leaderboard</h3>
+      <div class="score-item">
+        <p><strong>Player 1</strong> - Score: 1500</p>
+      </div>
+      <div class="score-item">
+        <p><strong>Player 2</strong> - Score: 1400</p>
+      </div>
+      <div class="score-item">
+        <p><strong>Player 3</strong> - Score: 1300</p>
+      </div>
+      <div class="score-item">
+        <p><strong>Player 4</strong> - Score: 1200</p>
+      </div>
+      <div class="score-item">
+        <p><strong>Player 5</strong> - Score: 1100</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

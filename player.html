@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    .sidebar {
+      background-color: #343a40;
+      color: white;
+      min-height: 100vh;
+      padding: 20px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+
+    .sidebar a:hover {
+      background-color: #007bff;
+    }
+
+    .main-content {
+      margin-left: 270px;
+      padding: 20px;
+    }
+
+    .user-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .user-card h3 {
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .user-card p {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .trending-questions {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    .trending-question-item {
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .trending-question-item:last-child {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>Menu</h3>
+    <a href="scoreboard.html">Scoreboard</a>
+    <a href="#">Question Management</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- User info card -->
+    <div class="user-card">
+      <h3>Welcome, Username!</h3>
+      <p>Score: <span id="user-score">1234</span></p>
+    </div>
+
+    <h1>Your Dashboard</h1>
+
+    <!-- Trending Questions Section -->
+    <div class="trending-questions">
+      <h3>Trending Questions</h3>
+      <div class="trending-question-item">
+        <p><strong>What is the capital of France?</strong></p>
+        <span>Answers: 50</span>
+      </div>
+      <div class="trending-question-item">
+        <p><strong>Who discovered gravity?</strong></p>
+        <span>Answers: 40</span>
+      </div>
+      <div class="trending-question-item">
+        <p><strong>Which planet is known as the Red Planet?</strong></p>
+        <span>Answers: 35</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
