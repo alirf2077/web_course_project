@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scoreboard</title>
+  <title>Player - New Question or Answered List</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="shared_styles.css" rel="stylesheet">
-  <link href="scoreboard_styles.css" rel="stylesheet">
+  <link href="user_question_management_styles.css" rel="stylesheet">
 </head>
 <body>
   <!-- Sidebar -->
   <div class="sidebar">
     <h3>Menu</h3>
-    <a href="home.html">Home</a>
+    <a href="player.html">Dashboard</a>
+    <a href="scoreboard.html">Scoreboard</a>
   </div>
 
   <!-- Main content -->
@@ -23,26 +24,13 @@
       <p>Score: <span id="user-score">1234</span></p>
     </div>
 
-    <h1>Your Scoreboard</h1>
+    <h1>Question Dashboard</h1>
 
-    <!-- Scoreboard Section -->
-    <div class="scoreboard">
-      <h3>Leaderboard</h3>
-      <div class="score-item">
-        <p><strong>Player 1</strong> - Score: 1500</p>
-      </div>
-      <div class="score-item">
-        <p><strong>Player 2</strong> - Score: 1400</p>
-      </div>
-      <div class="score-item">
-        <p><strong>Player 3</strong> - Score: 1300</p>
-      </div>
-      <div class="score-item">
-        <p><strong>Player 4</strong> - Score: 1200</p>
-      </div>
-      <div class="score-item">
-        <p><strong>Player 5</strong> - Score: 1100</p>
-      </div>
+    <!-- Options to start a new question or see answered questions -->
+    <div class="options-container">
+      <h3>What would you like to do?</h3>
+      <a href="#">Start New Question</a>
+      <a href="#">View Previously Answered Questions</a>
     </div>
   </div>
 
