@@ -1,0 +1,28 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  .sidebar.dark-mode {
+    background-color: #1f1f1f;
+  }
+  
+  .dashboard-section.dark-mode {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  .btn-dashboard.dark-mode {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  .sidebar a.dark-mode {
+    color: #f1f1f1;
+  }
+  
+  .sidebar a.dark-mode:hover {
+    background-color: #444;
+  }
+  
